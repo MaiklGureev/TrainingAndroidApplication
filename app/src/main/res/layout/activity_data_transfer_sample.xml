@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataTransferSampleActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data transfer between Activities"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textViewEmptyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty title"
+        android:textSize="25sp"/>
+    <TextView
+        android:id="@+id/textViewEmptyAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty author"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonEditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit title"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:id="@+id/buttonEditAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit author"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

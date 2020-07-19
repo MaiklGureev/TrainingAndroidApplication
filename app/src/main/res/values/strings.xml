@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TrainingAndroidApplication</string>
+    <string name="text_button1">Linear Layout</string>
+    <string name="text_button2">Grid Layout</string>
+    <string name="text_button3">Relative Layout</string>
+    <string name="text_button4">Constraint Layout</string>
+    <string name="text_button5">Control elements</string>
+    <string name="text_button6">Simple ListView</string>
+    <string name="text_button7">ListView with adapter</string>
+    <string name="text_button8">Data transfer between activities</string>
+    <string name="text_button9">Alert dialog</string>
+    <string name="text_compot_and_moteld">Compot and Motel\'d</string>
+    <string name="text_smollet">Capitan Smollet</string>
+    <string name="text_off">Button off</string>
+    <string name="text_on">Button on</string>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:rowCount="3"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    tools:context=".layouts.GridLayoutActivity"
+    >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:src="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:src="@color/colorAccent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:src="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_gravity="fill"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:textSize="30sp"
+
+        android:text="TEXT"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:layout_gravity="fill"
+        android:src="@color/colorPrimaryDark" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="2"
+        android:layout_gravity="fill"
+        android:src="@color/colorAccent" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_columnSpan="1"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="2"
+        android:layout_gravity="fill"
+        android:src="@color/colorPrimary" />
+
+
+
+</GridLayout>
