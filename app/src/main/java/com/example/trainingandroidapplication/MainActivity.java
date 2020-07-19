@@ -82,6 +82,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.button10:{
+                Log.d(TAG, "onClick: NotificationsActivity");
+                Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

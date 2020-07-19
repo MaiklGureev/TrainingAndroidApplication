@@ -77,6 +77,13 @@
                 android:text="@string/text_button9"
                 android:onClick="onClick"/>
 
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button10"
+                android:onClick="onClick"/>
+
 
 
         </LinearLayout>

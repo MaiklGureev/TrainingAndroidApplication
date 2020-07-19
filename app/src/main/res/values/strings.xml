@@ -9,6 +9,7 @@
     <string name="text_button7">ListView with adapter</string>
     <string name="text_button8">Data transfer between activities</string>
     <string name="text_button9">Alert dialog</string>
+    <string name="text_button10">Notification</string>
     <string name="text_compot_and_moteld">Compot and Motel\'d</string>
     <string name="text_smollet">Capitan Smollet</string>
     <string name="text_off">Button off</string>
