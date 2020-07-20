@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.example.trainingandroidapplication.fragments.FragmentActivity;
 import com.example.trainingandroidapplication.layouts.ConstraintLayoutActivity;
 import com.example.trainingandroidapplication.layouts.GridLayoutActivity;
 import com.example.trainingandroidapplication.layouts.LinearLayoutActivity;
@@ -90,8 +91,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.button11:{
-                Log.d(TAG, "onClick: NotificationsActivity");
-                Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                Log.d(TAG, "onClick: FragmentActivity");
+                Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
                 startActivity(intent);
                 break;
             }

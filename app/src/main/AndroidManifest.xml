@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".notifications.SampleForNotificationActivity"></activity>
+        <activity android:name=".fragments.FragmentActivity"></activity>
+        <activity android:name=".notifications.SampleForNotificationActivity" />
         <activity android:name=".notifications.NotificationsActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".EditTitleAndAuthorActivity" />
@@ -30,7 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".notifications.ActionForCustomNotification"/>
+
+        <receiver android:name=".notifications.ActionForCustomNotification" />
     </application>
 
 </manifest>

@@ -29,19 +29,19 @@ import java.util.Calendar;
 
 public class DialogActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Handler h;
-    ProgressDialog progressDialog;
-    Calendar calendar = Calendar.getInstance();
-    int year;
-    int month;
-    int day;
-    int hour;
-    int minute;
+    private ProgressDialog progressDialog;
+    private Calendar calendar;
+    private int year;
+    private int month;
+    private int day;
+    private int hour;
+    private int minute;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
+        calendar = Calendar.getInstance();
         year = calendar.get(Calendar.YEAR);
         month = calendar.get(Calendar.MONTH);
         day = calendar.get(Calendar.DAY_OF_MONTH);
