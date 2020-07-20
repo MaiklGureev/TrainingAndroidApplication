@@ -13,6 +13,7 @@ import com.example.trainingandroidapplication.layouts.LinearLayoutActivity;
 import com.example.trainingandroidapplication.layouts.RelativeLayoutActivity;
 import com.example.trainingandroidapplication.lists.ListViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewWithAdapterActivity;
+import com.example.trainingandroidapplication.notifications.NotificationsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -83,6 +84,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.button10:{
+                Log.d(TAG, "onClick: NotificationsActivity");
+                Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.button11:{
                 Log.d(TAG, "onClick: NotificationsActivity");
                 Intent intent = new Intent(MainActivity.this, NotificationsActivity.class);
                 startActivity(intent);

@@ -1,6 +1,7 @@
-package com.example.trainingandroidapplication;
+package com.example.trainingandroidapplication.notifications;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -9,6 +10,9 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import android.view.View;
+import android.widget.RemoteViews;
+
+import com.example.trainingandroidapplication.R;
 
 public class NotificationsActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -19,7 +23,6 @@ public class NotificationsActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notifications);
     }
-
 
 
     @Override
@@ -95,7 +98,7 @@ public class NotificationsActivity extends AppCompatActivity implements View.OnC
             case R.id.buttonNotificationWithButton: {
 
                 Intent notificationIntent = new Intent(NotificationsActivity.this, SampleForNotificationActivity.class);
-                notificationIntent.putExtra("value","Message from my notification 03!");
+                notificationIntent.putExtra("value", "Message from my notification 03!");
 
                 PendingIntent pendingIntent = PendingIntent.getActivity(NotificationsActivity.this,
                         0, notificationIntent, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -117,7 +120,37 @@ public class NotificationsActivity extends AppCompatActivity implements View.OnC
                 notificationManager.cancel(333);
                 break;
             }
+            case R.id.buttonCustomNotification: {
+
+                Intent intentButton1 = new Intent(NotificationsActivity.this,ActionForCustomNotification.class);
+                intentButton1.putExtra("message","Action from custom notification");
+                PendingIntent pendingIntentButton1 = PendingIntent.getBroadcast
+                        (NotificationsActivity.this,0,intentButton1,0);
+
+
+                RemoteViews remoteViews = new RemoteViews(getPackageName(), R.layout.notification);
+                remoteViews.setTextViewText(R.id.textViewNotificationTitle, "Custom title");
+
+                remoteViews.setOnClickPendingIntent(R.id.buttonNotification, pendingIntentButton1);
+
+                builder.setSmallIcon(R.mipmap.ic_launcher)
+                        .setCustomContentView(remoteViews)
+                        .setAutoCancel(true);
+
+                notificationManager.notify(444, builder.build());
+
+                break;
+            }
+            case R.id.buttonCustomNotificationCancel: {
+                notificationManager.cancel(444);
+                break;
+            }
         }
+
+
+    }
+
+    void makeToast() {
 
     }
 }
