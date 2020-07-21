@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ExpandableListView;
 
 import com.example.trainingandroidapplication.fragments.FragmentActivity;
 import com.example.trainingandroidapplication.layouts.ConstraintLayoutActivity;
 import com.example.trainingandroidapplication.layouts.GridLayoutActivity;
 import com.example.trainingandroidapplication.layouts.LinearLayoutActivity;
 import com.example.trainingandroidapplication.layouts.RelativeLayoutActivity;
+import com.example.trainingandroidapplication.lists.ExpandableListActivity;
 import com.example.trainingandroidapplication.lists.ListViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewWithAdapterActivity;
 import com.example.trainingandroidapplication.notifications.NotificationsActivity;
@@ -100,6 +102,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(TAG, "onClick: ActionBarActivity");
                 Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
                 startActivity(intent);
+                break;
+            }
+            case R.id.button13:{
+                Log.d(TAG, "onClick: ExpandableListActivity");
+                Intent intent = new Intent(MainActivity.this, ExpandableListActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.button14:{
+//                Log.d(TAG, "onClick: ActionBarActivity");
+//                Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
+//                startActivity(intent);
                 break;
             }
         }
