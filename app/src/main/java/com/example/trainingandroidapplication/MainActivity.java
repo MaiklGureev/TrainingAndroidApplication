@@ -96,6 +96,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.button12:{
+                Log.d(TAG, "onClick: ActionBarActivity");
+                Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

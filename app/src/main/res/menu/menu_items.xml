@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/item_app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+
+    <group
+        android:id="@+id/itemRadioGroup"
+        android:checkableBehavior="single"
+        android:menuCategory="system">
+        <item
+            android:id="@+id/itemRadioButton1"
+            android:title="Item1" />
+        <item
+            android:id="@+id/itemRadioButton2"
+            android:title="Item2" />
+    </group>
+
+    <group
+        android:id="@+id/itemCheckGroup"
+        android:checkableBehavior="all"
+        android:menuCategory="secondary">
+        <item
+            android:id="@+id/itemCheckButton1"
+            android:title="Item3" />
+        <item
+            android:id="@+id/itemCheckButton2"
+            android:title="Item4" />
+    </group>
+
+    <group
+        android:id="@+id/itemSimpleGroup"
+        android:checkableBehavior="none"
+        android:enabled="true"
+        android:menuCategory="container">
+        <item
+            android:id="@+id/itemSimpleButton1"
+            android:title="Item5" />
+        <item
+            android:id="@+id/itemSimpleButton2"
+            android:title="Item6" />
+    </group>
+</menu>
