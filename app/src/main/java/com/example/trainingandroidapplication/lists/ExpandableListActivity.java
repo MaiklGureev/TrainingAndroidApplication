@@ -36,7 +36,7 @@ public class ExpandableListActivity extends AppCompatActivity {
 
         String groupFrom[] = new String[]{"groupName"};
         int groupTo[] = new int[]{android.R.id.text1};
-        String childFrom[] = new String[]{"itemsName"};
+        String childFrom[] = new String[]{"itemName"};
         int childTo[] = new int[]{android.R.id.text1};
 
         for (String s : groups) {
@@ -47,7 +47,7 @@ public class ExpandableListActivity extends AppCompatActivity {
 
         for (String s : words) {
             map = new HashMap<>();
-            map.put("itemsName", s);
+            map.put("itemName", s);
             tempMapArrayList.add(map);
         }
         allItemsAndGroupsMapArrayList.add(tempMapArrayList);
@@ -55,7 +55,7 @@ public class ExpandableListActivity extends AppCompatActivity {
         tempMapArrayList = new ArrayList<>();
         for (String s : items) {
             map = new HashMap<>();
-            map.put("itemsName", s);
+            map.put("itemName", s);
             tempMapArrayList.add(map);
         }
         allItemsAndGroupsMapArrayList.add(tempMapArrayList);
@@ -63,7 +63,7 @@ public class ExpandableListActivity extends AppCompatActivity {
         tempMapArrayList = new ArrayList<>();
         for (String s : books) {
             map = new HashMap<>();
-            map.put("itemsName", s);
+            map.put("itemName", s);
             tempMapArrayList.add(map);
         }
         allItemsAndGroupsMapArrayList.add(tempMapArrayList);
@@ -91,9 +91,8 @@ public class ExpandableListActivity extends AppCompatActivity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
                 String g = groupsMapArrayList.get(groupPosition).get("groupName");
-                String i = allItemsAndGroupsMapArrayList.get(groupPosition).get(childPosition).get("itemsName");
+                String i = allItemsAndGroupsMapArrayList.get(groupPosition).get(childPosition).get("itemName");
                 Toast.makeText(ExpandableListActivity.this, g + " " + i, Toast.LENGTH_SHORT).show();
-
                 return false;
             }
         });

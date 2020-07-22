@@ -16,6 +16,7 @@ import com.example.trainingandroidapplication.layouts.RelativeLayoutActivity;
 import com.example.trainingandroidapplication.lists.ExpandableListActivity;
 import com.example.trainingandroidapplication.lists.ListViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewWithAdapterActivity;
+import com.example.trainingandroidapplication.lists.SimpleAdapterActivity;
 import com.example.trainingandroidapplication.notifications.NotificationsActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -111,9 +112,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.button14:{
-//                Log.d(TAG, "onClick: ActionBarActivity");
-//                Intent intent = new Intent(MainActivity.this, ActionBarActivity.class);
-//                startActivity(intent);
+                Log.d(TAG, "onClick: SimpleAdapterActivity");
+                Intent intent = new Intent(MainActivity.this, SimpleAdapterActivity.class);
+                startActivity(intent);
                 break;
             }
         }
