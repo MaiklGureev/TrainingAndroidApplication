@@ -5,7 +5,7 @@
     <string name="text_button3">Relative Layout</string>
     <string name="text_button4">Constraint Layout</string>
     <string name="text_button5">Control elements</string>
-    <string name="text_button6">Simple ListView</string>
+    <string name="text_button6">Simple List View</string>
     <string name="text_button7">ListView with adapter</string>
     <string name="text_button8">Data transfer between activities</string>
     <string name="text_button9">Dialogs</string>
@@ -13,9 +13,9 @@
     <string name="text_button11">Fragments</string>
     <string name="text_button12">Action bar</string>
     <string name="text_button13">Expandable list</string>
-    <string name="text_button14">SimpleAdapter</string>
-    <string name="text_button15">**********</string>
-    <string name="text_button16">**********</string>
+    <string name="text_button14">Simple Adapter</string>
+    <string name="text_button15">Grid View</string>
+    <string name="text_button16">Service play music</string>
     <string name="text_button17">**********</string>
     <string name="text_compot_and_moteld">Compot and Motel\'d</string>
     <string name="text_smollet">Capitan Smollet</string>

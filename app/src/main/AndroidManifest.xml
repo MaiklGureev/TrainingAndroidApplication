@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lists.SimpleAdapterActivity"></activity>
+        <activity android:name=".PlayMusicServiceActivity"></activity>
+        <activity android:name=".lists.GridViewActivity" />
+        <activity android:name=".lists.SimpleAdapterActivity" />
         <activity android:name=".lists.ExpandableListActivity" />
         <activity android:name=".ActionBarActivity" />
         <activity android:name=".fragments.FragmentActivity" />
@@ -36,6 +38,7 @@
         </activity>
 
         <receiver android:name=".notifications.ActionForCustomNotification" />
+        <service android:name=".MyService"/>
     </application>
 
 </manifest>

@@ -14,6 +14,7 @@ import com.example.trainingandroidapplication.layouts.GridLayoutActivity;
 import com.example.trainingandroidapplication.layouts.LinearLayoutActivity;
 import com.example.trainingandroidapplication.layouts.RelativeLayoutActivity;
 import com.example.trainingandroidapplication.lists.ExpandableListActivity;
+import com.example.trainingandroidapplication.lists.GridViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewWithAdapterActivity;
 import com.example.trainingandroidapplication.lists.SimpleAdapterActivity;
@@ -114,6 +115,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button14:{
                 Log.d(TAG, "onClick: SimpleAdapterActivity");
                 Intent intent = new Intent(MainActivity.this, SimpleAdapterActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.button15:{
+                Log.d(TAG, "onClick: GridViewActivity");
+                Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                startActivity(intent);
+                break;
+            }case R.id.button16:{
+                Log.d(TAG, "onClick: PlayMusicServiceActivity");
+                Intent intent = new Intent(MainActivity.this, PlayMusicServiceActivity.class);
                 startActivity(intent);
                 break;
             }
