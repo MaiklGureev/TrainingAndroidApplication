@@ -129,6 +129,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.button17:{
+                Log.d(TAG, "onClick: WriteAndReadFileActivity");
+                Intent intent = new Intent(MainActivity.this, WriteAndReadFileActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

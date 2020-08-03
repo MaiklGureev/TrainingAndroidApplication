@@ -124,6 +124,13 @@
                 android:text="@string/text_button16"
                 android:onClick="onClick"/>
 
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_button17"
+                android:onClick="onClick"/>
+
         </LinearLayout>
 
     </ScrollView>

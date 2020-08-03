@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".WriteAndReadFileActivity">
+
+    <EditText
+        android:id="@+id/editTextForWriteFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Some text one..."
+        android:lines="3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonWriteFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Write to file"
+        android:textSize="20sp"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/textViewForReadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="Some text two..."
+        android:lines="3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonReadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Read from file"
+        android:textSize="20sp"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

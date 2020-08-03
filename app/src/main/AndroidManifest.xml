@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PlayMusicServiceActivity"></activity>
+        <activity android:name=".WriteAndReadFileActivity"></activity>
+        <activity android:name=".PlayMusicServiceActivity" />
         <activity android:name=".lists.GridViewActivity" />
         <activity android:name=".lists.SimpleAdapterActivity" />
         <activity android:name=".lists.ExpandableListActivity" />
@@ -38,7 +39,11 @@
         </activity>
 
         <receiver android:name=".notifications.ActionForCustomNotification" />
-        <service android:name=".MyService"/>
+
+        <service android:name=".MyService" />
     </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>
