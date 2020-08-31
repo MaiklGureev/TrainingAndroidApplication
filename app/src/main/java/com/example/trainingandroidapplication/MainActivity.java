@@ -135,6 +135,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             }
+            case R.id.button18:{
+                Log.d(TAG, "onClick: LifecycleActivity");
+                Intent intent = new Intent(MainActivity.this, LifecycleActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
 }

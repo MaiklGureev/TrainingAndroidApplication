@@ -17,7 +17,7 @@
     <string name="text_button15">Grid View</string>
     <string name="text_button16">Service play music</string>
     <string name="text_button17">Write and read file</string>
-    <string name="text_button18">**********</string>
+    <string name="text_button18">Lifecycle</string>
     <string name="text_button19">**********</string>
     <string name="text_button20">**********</string>
     <string name="text_button21">**********</string>
@@ -25,7 +25,7 @@
     <string name="text_smollet">Capitan Smollet</string>
     <string name="text_off">Button off</string>
     <string name="text_on">Button on</string>
+    <string name="title_activity_lifecycle">LifecycleActivity</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
