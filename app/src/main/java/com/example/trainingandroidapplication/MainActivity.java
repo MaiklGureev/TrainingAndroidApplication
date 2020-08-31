@@ -146,6 +146,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(MainActivity.this, BroadcastActivity.class);
                 startActivity(intent);
                 break;
+            }case R.id.button20:{
+                Log.d(TAG, "onClick: SystemInfoActivity");
+                Intent intent = new Intent(MainActivity.this, SystemInfoActivity.class);
+                startActivity(intent);
+                break;
             }
         }
     }

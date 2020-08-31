@@ -19,8 +19,12 @@
     <string name="text_button17">Write and read file</string>
     <string name="text_button18">Lifecycle</string>
     <string name="text_button19">Broadcast</string>
-    <string name="text_button20">**********</string>
+    <string name="text_button20">System Info</string>
     <string name="text_button21">**********</string>
+    <string name="text_button22">**********</string>
+    <string name="text_button23">**********</string>
+    <string name="text_button24">**********</string>
+    <string name="text_button25">**********</string>
     <string name="text_compot_and_moteld">Compot and Motel\'d</string>
     <string name="text_smollet">Capitan Smollet</string>
     <string name="text_off">Button off</string>
