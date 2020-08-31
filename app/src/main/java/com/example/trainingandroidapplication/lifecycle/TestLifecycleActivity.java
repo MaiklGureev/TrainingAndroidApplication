@@ -1,8 +1,10 @@
 package com.example.trainingandroidapplication.lifecycle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -14,10 +16,13 @@ public class TestLifecycleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_lifecycle);
+        setTitle("SecondLifecycleActivity");
+        showToast("onCreate");
     }
 
     void showToast(String s) {
-        Toast.makeText(this, "TestLifecycleActivity: " + s, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "SecondLifecycleActivity: " + s, Toast.LENGTH_SHORT).show();
+        Log.d("SecondLifecycleActivity", "showToast: "+s);
     }
 
     @Override
@@ -48,6 +53,18 @@ public class TestLifecycleActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         showToast("onDestroy");
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        showToast("onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        showToast("onRestoreInstanceState");
     }
 
     public void onClick(View view) {

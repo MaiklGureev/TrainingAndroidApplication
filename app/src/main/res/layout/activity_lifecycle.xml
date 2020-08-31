@@ -8,12 +8,6 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="LifecycleActivity"
-        android:gravity="center"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -125,7 +125,7 @@ public class SystemInfoActivity extends AppCompatActivity {
 
 
         int permissionStatus = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE);
-        int permissionStatus2 = ContextCompat.checkSelfPermission(this, Manifest.permission.LOCATION_HARDWARE);
+        int permissionStatus2 = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
 
         if (permissionStatus == PackageManager.PERMISSION_GRANTED && permissionStatus2 == PackageManager.PERMISSION_GRANTED) {
 
