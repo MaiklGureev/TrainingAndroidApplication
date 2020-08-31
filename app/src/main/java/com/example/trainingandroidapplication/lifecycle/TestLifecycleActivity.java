@@ -1,28 +1,23 @@
-package com.example.trainingandroidapplication;
+package com.example.trainingandroidapplication.lifecycle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class LifecycleActivity extends AppCompatActivity {
+import com.example.trainingandroidapplication.R;
+
+public class TestLifecycleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lifecycle);
-        showToast("onCreate");
-    }
-
-    public void onClick(View view) {
-        Intent intent = new Intent(this, TestLifecycleActivity.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_test_lifecycle);
     }
 
     void showToast(String s) {
-        Toast.makeText(this, "LifecycleActivity: " + s, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "TestLifecycleActivity: " + s, Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -55,5 +50,7 @@ public class LifecycleActivity extends AppCompatActivity {
         showToast("onDestroy");
     }
 
-
+    public void onClick(View view) {
+        finish();
+    }
 }

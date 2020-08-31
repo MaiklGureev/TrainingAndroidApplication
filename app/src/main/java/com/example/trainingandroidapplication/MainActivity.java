@@ -6,13 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ExpandableListView;
 
+import com.example.trainingandroidapplication.broadcast.BroadcastActivity;
 import com.example.trainingandroidapplication.fragments.FragmentActivity;
 import com.example.trainingandroidapplication.layouts.ConstraintLayoutActivity;
 import com.example.trainingandroidapplication.layouts.GridLayoutActivity;
 import com.example.trainingandroidapplication.layouts.LinearLayoutActivity;
 import com.example.trainingandroidapplication.layouts.RelativeLayoutActivity;
+import com.example.trainingandroidapplication.lifecycle.LifecycleActivity;
 import com.example.trainingandroidapplication.lists.ExpandableListActivity;
 import com.example.trainingandroidapplication.lists.GridViewActivity;
 import com.example.trainingandroidapplication.lists.ListViewActivity;
@@ -138,6 +139,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button18:{
                 Log.d(TAG, "onClick: LifecycleActivity");
                 Intent intent = new Intent(MainActivity.this, LifecycleActivity.class);
+                startActivity(intent);
+                break;
+            }case R.id.button19:{
+                Log.d(TAG, "onClick: BroadcastActivity");
+                Intent intent = new Intent(MainActivity.this, BroadcastActivity.class);
                 startActivity(intent);
                 break;
             }

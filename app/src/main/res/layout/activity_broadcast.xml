@@ -4,22 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".lifecycle.TestLifecycleActivity">
+    android:gravity="center"
+    tools:context=".broadcast.BroadcastActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="TestLifecycleActivity"
-        android:gravity="center"/>
     <Button
+        android:id="@+id/buttonSendBroadcastMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Exit"
-        android:textSize="30sp"
-        android:textAlignment="center"
-        android:onClick="onClick"/>
+        android:onClick="sendMessage"
+        android:text="Send message!"
+        android:textSize="30sp"/>
+
 
 </LinearLayout>

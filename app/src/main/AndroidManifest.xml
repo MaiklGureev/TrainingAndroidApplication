@@ -13,8 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TestLifecycleActivity"></activity>
-        <activity android:name=".LifecycleActivity" />
+        <receiver
+            android:name=".broadcast.MyReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
+        <activity android:name=".broadcast.BroadcastActivity" />
+        <activity android:name=".lifecycle.TestLifecycleActivity" />
+        <activity android:name=".lifecycle.LifecycleActivity" />
         <activity android:name=".WriteAndReadFileActivity" />
         <activity android:name=".PlayMusicServiceActivity" />
         <activity android:name=".lists.GridViewActivity" />
