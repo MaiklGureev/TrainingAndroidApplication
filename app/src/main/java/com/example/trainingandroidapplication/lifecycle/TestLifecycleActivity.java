@@ -43,6 +43,13 @@ public class TestLifecycleActivity extends AppCompatActivity {
         showToast("onPause");
     }
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        showToast("onResume");
+    }
+
     @Override
     protected void onRestart() {
         super.onRestart();

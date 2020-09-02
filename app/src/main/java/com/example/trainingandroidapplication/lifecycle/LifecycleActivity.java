@@ -44,6 +44,12 @@ public class LifecycleActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        showToast("onResume");
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
         showToast("onPause");
